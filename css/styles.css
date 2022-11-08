@@ -5,7 +5,7 @@
 }
 
 
-/* LANDING PAGE Front page*/
+/* GLOBAL */
 
 body {
     margin: 0px;
@@ -22,13 +22,20 @@ h1 {
     font-size: 5em;
 }
 
+h2 {
+    font-family: "Roboto Serif";
+    font-size: 2.5em;
+}
+
+
+/* LANDING PAGE Front page*/
+
 .front-page {
     display: flex;
     background-color: white;
     align-items: center;
     text-align: center;
-    max-height: 100vh;
-    overflow: hidden;
+    height: 100vh;
     margin-bottom: 80px;
 }
 
@@ -38,6 +45,11 @@ h1 {
 
 .front-page_right img {
     max-width: 100px;
+}
+
+.front-page_left img {
+    height: 100vh;
+    object-fit: cover;
 }
 
 .front-page a {
@@ -52,10 +64,6 @@ h1 {
 
 /* LANDING PAGE Eco friendly */
 
-h2 {
-    font-size: 2.5em;
-}
-
 .eco-page {
     display: flex;
     background-color: white;
@@ -64,6 +72,133 @@ h2 {
     margin-bottom: 80px;
 }
 
-.eco-page > * {
+.eco-page_right img {
+    height: 550px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.eco-page_right {
     flex: 1;
+    text-align: center;
+}
+
+.eco-page_left {
+    flex: 1;
+    margin-left: 80px;
+}
+
+
+/* LANDING PAGE Reviews */
+
+.review-page {
+    background-color: white;
+    height: 100vh;
+    margin-bottom: 80px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.review-page h2 {
+    padding: 80px;
+}
+
+.review-page img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-page_content {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.test-person_name {
+    font-weight: bold;
+}
+
+
+/* LANDING PAGE About */
+
+.about-page {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    margin-bottom: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+.about-page_left img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.about-page_left {
+    flex: 1;
+    margin: 50px;
+}
+
+.about-page_right {
+    flex: 1;
+    margin: 50px;
+}
+
+/* FOOTER */
+
+footer {
+    height: 100vh;
+    color: white;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    padding: 20px;
+}
+
+.logo_and_slogan {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 70px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.slogan {
+    flex: 2;
+}
+
+.footer_content {
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.footer_content > * {
+    flex: 1;
+}
+
+.connect a {
+    display: block;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+}
+
+.mail {
+    margin-top: 80px;
+    margin-left: 150px;
 }
