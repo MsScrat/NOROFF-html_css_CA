@@ -14,6 +14,7 @@ body {
 
 header {
     background-color: white;
+    padding: 10px;
 }
 
 
@@ -32,9 +33,11 @@ nav ul {
     flex-direction: row;
     align-items: center;
     list-style: none;
-    margin: ;
 }
 
+nav ul li {
+    margin: auto;
+}
 
 img {
     width: 100%;
@@ -239,4 +242,58 @@ footer {
 .mail {
     margin-top: 80px;
     margin-left: 150px;
+}
+
+
+/* PRODUCT OVERVIEW Header*/
+
+.product-overview_header {
+    height: 400px;
+    object-fit: cover;
+}
+
+.gender_and_sale {
+    background-color: white;
+    padding: 35px;
+    text-align: center;
+}
+
+.gender_and_sale a {
+    text-decoration: none;
+    color: black;
+    padding: 50px;
+}
+
+
+/* PRODUCT OVERVIEW Featured */
+
+.featured {
+    height: 100vh;
+    display: flex;
+    align-items: center
+}
+
+.featured_jacket {
+    height: 500px;
+    width: 300px;
+    object-fit: contain;
+}
+
+
+/* PRODUCT OVERVIEW Popular */
+
+.popular {
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+}
+
+.popular_jackets {
+    display: flex;
+}
+
+.popular_jackets img {
+    height: 400px;
+    width: 350px;
+    object-fit: contain;
 }
