@@ -1,8 +1,8 @@
 
 
 @font-face {
-    font-family: "Darker Grotesque";
-    src: url(/fonts/Darker_Grotesque/DarkerGrotesque-Light.ttf);
+    font-family: "Darker Grotesque", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto Serif", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -14,6 +14,7 @@
 body {
     margin: 0 auto;
     background-color: #62736F;
+    font-family: "Darker Grotesque";
 }
 
 header {
@@ -49,7 +50,7 @@ img {
 
 h1 {
     font-family: "Roboto Serif";
-    font-size: 70px;
+    font-size: 60px;
 }
 
 h2 {
@@ -151,10 +152,6 @@ h2 {
     justify-content: space-evenly;
 }
 
-.test-person_name {
-    font-weight: bold;
-}
-
 
 /* LANDING PAGE About */
 
@@ -203,36 +200,66 @@ h2 {
 .gender_and_sale a {
     text-decoration: none;
     color: black;
-    padding: 70px;
+    padding: 0px 70px;
 }
 
 
 /* COLLECTION Featured */
 
 .featured {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(98,115,111);
+    background: linear-gradient(180deg, rgba(98,115,111,1) 0%, rgba(98,115,111,1) 65%, rgba(255,255,255,1) 65%);
+/* The background above is copied and pasted from https://cssgradient.io */
 }
 
 .featured_jacket {
     height: 600px;
     width: 400px;
     object-fit: contain;
+    margin: 50px 100px 0px 0px;
+}
+
+.in_focus {
+    margin: 100px auto;
+    color: white;
+}
+
+.focus {
+    font-family: "Roboto Serif", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin: 0px;
+}
+
+#bikers_edition {
+    font-family: "Darker Grotesque", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    margin: 0px;
 }
 
 
 /* COLLECTION Popular */
 
-.popular {
-    height: 100vh;
+.popular,
+.all-jackets {
     background-color: white;
 }
 
+.popular h2 {
+    margin: 0px 50px 0px 80px;
+}
+
+.all-jackets h2 {
+    text-align: right;
+    margin: 0px 80px 0px 50px;
+}
+
 .popular_jackets {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
 }
 
 .popular_jackets img {
@@ -240,6 +267,23 @@ h2 {
     width: 300px;
     object-fit: contain;
     background-color: #D9D9D9;
+    padding: 50px 50px 0px 50px;
+    margin: 20px 20px 0px 20px;
+}
+
+.jacket_description {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.jacket_name {
+    text-align: left;
+}
+
+.jacket_price {
+    text-align: right;
 }
 
 
@@ -248,18 +292,21 @@ h2 {
 .inspiration {
     height: 100vh;
     background-color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
 .inspiration img {
     height: 500px;
-    width: 500px;
+    width: 550px;
     object-fit: cover;
+    margin: 80px 30px 80px 80px;
 }
 
 .inspiration_right {
-    padding: 50px;
+    padding: 30px;
+    font-size: 35px;
 }
 
 
@@ -283,33 +330,130 @@ h2 {
 .product_left {
     display: flex;
     flex-direction: column;
+
+}
+
+.product_right {
+    margin: auto;
+}
+
+.decitions {
+    margin: 50px 10px;
 }
 
 .purchase_button {
     background-color: #62736F;
     text-decoration: none;
+    font-size: 20px;
     color: white;
-    border-radius: 50px;
+    text-align: center;
+    border-radius: 10px;
     padding: 8px 80px;
 }
 
 .back {
     text-decoration: none;
     color: black;
+    margin-top: 60px;
+}
+
+.product-detail_headline {
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.product-detail_headline span {
+    position: absolute;
+    bottom: 0px;
+    right: 250px;
+    font-size: 30px;
 }
 
 
-/* NEW PAGE - PRODUCT DETAIL */
-/* ------------------------- */
+/* NEW PAGE - CHECKOUT */
+/* ------------------- */
 
 .checkout {
     background-color: white;
     height: 85vh;
+    display: flex;
+    justify-content: space-around;
 }
 
 .description {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
+    border: 1px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+.description,
+.product-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.product-line img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.purchase_info {
+    background-color: #D9D9D9;
+    width: 300px;
+    padding: 30px 30px 60px 30px;
+    text-align: left;
+}
+
+.card_vipps {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card_info {
+    display: flex;
+    align-items: center;
+    border: 6px solid white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.cvc {
+    margin-bottom: 50px;
+}
+
+.total_over {
+    margin-top: 100px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    border: 1px solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.total_under {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.shipping,
+.total {
+    margin-left: 10px;
+}
+
+.free,
+.sum {
+    margin-right: 10px;
 }
 
 

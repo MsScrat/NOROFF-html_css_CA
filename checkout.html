@@ -7,6 +7,12 @@
     <meta name="description" content="Purchase items from Rainydays"/>
     <title>Rainydays | Checkout</title>
     <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Roboto+Serif:opsz,wght@8..144,200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -16,7 +22,7 @@
                 <li><a href="index.html#about-page">About</a></li> 
                 <li><a href="index.html"><img id="logo" src="images/RainyDays_Logo.png" alt="Rainidays logo"/></a></li>
                 <li><a href="index.html#review-page">Reviews</a></li>
-                <li><a href="product-overview.html#contact-page">Contact</a></li>
+                <li><a href="collection.html#contact-page">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -24,11 +30,65 @@
         <section>
             <h2>Checkout</h2>
             <div class="description">
+                <p>Product image</p>
                 <p>Product</p>
                 <p>Size</p>
                 <p>Quantaty</p>
                 <p>Price</p>
                 <p>Currancy</p>
+            </div>
+            <div class="product-line">
+                <img src="images/Rainydays_jacket_2.png"/>
+                <p>Haranda</p>
+                <p>M</p>
+                <p>1</p>
+                <p>749</p>
+                <p>NOK</p>
+            </div>
+            <div class="product-line">
+                <img src="images/Rainydays_jacket_1.png"/>
+                <p>Runette</p>
+                <p>M</p>
+                <p>1</p>
+                <p>599</p>
+                <p>NOK</p>
+            </div>
+            <div class="total_over">
+                <p class="shipping">Shipping</p>
+                <p class="free">FREE</p>
+            </div>
+            <div class="total_under">
+                <p class="total">Total</p>
+                <p class="sum">1 348 NOK</p>
+            </div>
+            <a class="back" href="collection.html">Back to shopping</a>
+        </section>
+        <section>
+            <h2>Purchase info</h2>
+            <div class="purchase_info">
+                <div class="card_vipps">
+                    <input type="radio" name="card" value="card" id="card"> 
+                    <label for="card">Card</label>
+                    <input type="radio" name="vipps" value="vipps" id="vipps"> 
+                    <label for="vipps">Vipps</label>
+                </div>
+                <form>
+                    <label for="card-name">Name on card</label>
+                    <input class="card_info" type="text" name="card-name"/>
+                </form>
+                <form>
+                    <label for="card-number">Card number</label>
+                    <input class="card_info" type="text" name="card-number"/>
+                </form>
+                <form>
+                    <label for="date">Date</label>
+                    <input class="card_info" type="date" name="date"/>
+                </form>
+                <form class="cvc">
+                    <label for="CVC">CVC</label>
+                    <input class="card_info" type="text" name="CVC"/>
+                </form>
+                <a class="purchase_button" href="purchace-complete.html">Purchase</a>
             </div>
         </section>
     </main>
