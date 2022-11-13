@@ -585,6 +585,30 @@ footer {
 /* MEDIA QUERIES Tablet */
 @media screen and (max-width: 800px) {
 
+    .review-page {
+    flex-direction: column;
+    }
+
+    .about-page {
+        flex-direction: column;
+    }
+
+    .about-page_right {
+        margin: 20px;
+    }
+
+    .about-page_right h2 {
+        margin: 0px;
+    }
+
+    .about-page_left {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .about-page img {
+        height: 400px;
+        width: 400px;
+    }
 
 }
 
