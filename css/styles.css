@@ -182,7 +182,7 @@ h2 {
 
 
 /* NEW PAGE - COLLECTION */
-/* --------------------------- */
+/* --------------------- */
 
 /* COLLECTION Header*/
 
@@ -457,10 +457,67 @@ h2 {
 }
 
 
+/* NEW PAGE - PURCHASE COMPLETE */
+/* ---------------------------- */
+
+.purchase-complete {
+    background-color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+.purchase-complete h2 {
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
+.purchase-complete_info {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin: auto;
+}
+
+.purchase-complete_items {
+    background-color: #D9D9D9;
+    flex: 1;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    justify-content: space-around;
+}
+
+.purchase-complete_details {
+    background-color: #D9D9D9;
+    flex: 1;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.purchase-complete_items img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+.purchase-complete_jackets {
+    display: flex
+}
+
+.purchase-complete_text {
+    width: 1000px;
+    margin: auto auto 110px auto;
+}
+
+
 /* NEW PAGE - FOOTER */
 /* ----------------- */
-
-/* FOOTER */
 
 footer {
     height: 100vh;
@@ -524,4 +581,25 @@ footer {
 .mail {
     margin-top: 80px;
     margin-left: 150px;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* MEDIA QUERIES Phone */
+@media screen (min-width: 600px; ) {
+    
+}
+
+
+/* MEDIA QUERIES Tablet */
+@media screen (min-width: 1000px;) {
+    
+}
+
+
+/* MEDIA QUERIES Laptop */
+@media screen (min-width: 2000px;) {
+    
 }
