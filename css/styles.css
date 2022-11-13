@@ -506,7 +506,7 @@ a {
 
 .purchase-complete_text {
     width: 1000px;
-    margin: auto auto 60px auto;
+    margin: 60px auto 60px auto;
 }
 
 
@@ -583,11 +583,33 @@ footer {
 
 
 /* MEDIA QUERIES Tablet */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+
+    .front-page {
+        flex-direction: column;
+    }
+
+    .front-page img {
+        height: 200px;
+        width: 1000px;
+        object-fit: cover;
+    }
+
+    .front-page_right {
+        margin-bottom: 50px;
+    }
+
+
+    .eco-page img {
+        height: 400px;
+        width: 300px;
+    }
+
 
     .review-page {
     flex-direction: column;
     }
+
 
     .about-page {
         flex-direction: column;
@@ -610,6 +632,172 @@ footer {
         width: 400px;
     }
 
+
+    .footer_content {
+        flex-direction: column;
+    }
+
+    .footer_content {
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .mail {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    .featured {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .in_focus {
+        margin: 0;
+    }
+
+    .featured img {
+        height: 400px;
+        width: 400px;
+        margin: 50px auto;
+    }
+
+    .focus {
+        font-size: 40px;
+        margin: 20px auto auto auto;
+    }
+
+    #bikers_edition {
+        font-size: 60px;
+        margin: 5px auto 20px auto;
+    }
+
+    .popular h2,
+    .all-jackets h2 {
+        text-align: center;
+        padding: 20px auto;
+    }
+    
+    .inspiration {
+        flex-direction: column;
+
+    }
+
+    .inspiration_right {
+        padding: 0px;
+        margin-bottom: 20px;
+        font-size: 40px;
+       }
+    
+    .inspiration img {
+        height: 400px;
+        width: 400px;
+        margin: auto;
+    }
+
+
+    .all_jackets,
+    .popular_jackets {
+        flex-wrap: wrap;
+        margin: 0px;
+        gap: 20px;
+    }
+ 
+    .popular_jackets img {
+     height: 400px;
+     width: 400px;
+     margin: 0px;
+     padding: 0px;
+    }
+
+
+    .content {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0px 150px;
+    }
+    
+    .product_right {
+    padding: 0px;
+    margin: 0px;
+    }
+    
+    .product_right img {
+    height: 400px;
+    width: 400px;
+       }
+    
+    .product-detail_headline span {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    left: 50px;
+    }
+    
+    .back {
+    margin: 20px auto;
+    }
+
+
+    .checkout {
+        flex-direction: column;
+       }
+    
+       .description,
+       .product-line,
+       .total_over,
+       .total_under {
+        gap: 0px;
+        margin: auto 10px;
+       }
+    
+       .checkout h1,
+       .checkout h2 {
+        text-align: center;
+       }
+    
+       .total_over {
+        margin-top: 25px;
+       }
+    
+       .purchase_info h2 {
+        margin: 20px auto;
+       }
+    
+       .purchase_info {
+        text-align: center;
+        width: auto;
+       }
+    
+       .purchase_info form input,
+       .card_vipps {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+       }
+    
+       #back {
+        display: none;
+       }
+
+    
+       .purchase-complete_info {
+        width: 100%;
+        margin: 100px auto;
+       }
+    
+       #item {
+        display: none;
+       }
+    
+       .purchase-complete_text {
+        width: 100%;
+        margin: 100px auto;
+       }
+    
+
 }
 
 /* MEDIA QUERIES Phone */
@@ -625,7 +813,7 @@ footer {
 
     .front-page img {
         height: 200px;
-        width: 375px;
+        width: 600px;
         object-fit: cover;
     }
 
@@ -640,7 +828,7 @@ footer {
     }
 
     .eco-page img {
-        height: 200px;
+        height: 350px;
         width: 250px;
         margin-bottom: 25px;
     }
@@ -754,7 +942,7 @@ footer {
 
    .all_jackets,
    .popular_jackets {
-        flex-direction: column;
+        flex-wrap: wrap;
         margin: 0px;
    }
 
