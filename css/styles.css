@@ -321,6 +321,7 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin-top: 100px;
 }
 
 .product_right {
